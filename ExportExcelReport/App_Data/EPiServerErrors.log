@@ -1,0 +1,417 @@
+﻿2023-08-09 00:31:15,637 [85] ERROR EPiServer.Find.UI.Helpers.ExternalResourceHelper: Could not fetch https://dl.episerver.net/version.json, the following occured: System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at EPiServer.Find.UI.Helpers.ExternalResourceHelper.FetchVersionFromExternalResource[T](String urlToJsonFile)
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+2023-08-09 01:17:02,135 [9] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+CsvHelper.ReaderException: No header record was found.
+IReader state:
+   ColumnCount: 0
+   CurrentIndex: -1
+   HeaderRecord:
+
+IParser state:
+   ByteCount: 0
+   CharCount: 0
+   Row: 1
+   RawRow: 1
+   Count: 0
+   RawRecord:
+
+
+   at CsvHelper.CsvReader.ParseNamedIndexes()
+   at CsvHelper.CsvReader.ReadHeader()
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 72
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+CsvHelper.ReaderException: No header record was found.
+IReader state:
+   ColumnCount: 0
+   CurrentIndex: -1
+   HeaderRecord:
+
+IParser state:
+   ByteCount: 0
+   CharCount: 0
+   Row: 1
+   RawRow: 1
+   Count: 0
+   RawRecord:
+
+
+   at CsvHelper.CsvReader.ParseNamedIndexes()
+   at CsvHelper.CsvReader.ReadHeader()
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 72
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 01:29:27,796 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 01:43:46,142 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 03:03:14,843 [13] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 03:07:26,998 [15] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property PageCreatedBy is read-only.
+   at EPiServer.Core.PropertyData.ThrowIfReadOnly()
+   at EPiServer.Core.PropertyString.set_String(String value)
+   at EPiServer.Core.PropertyString.<>c__DisplayClass11_0.<set_Value>b__0()
+   at EPiServer.Core.PropertyData.SetPropertyValue(Object value, SetPropertyValueDelegate doSet)
+   at EPiServer.Core.PropertyString.set_Value(Object value)
+   at EPiServer.Core.ContentData.SetValue(String index, Object value)
+   at EPiServer.Core.ContentData.set_Item(String index, Object value)
+   at EPiServer.Core.PageData.set_CreatedBy(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 114
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 84
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property PageCreatedBy is read-only.
+   at EPiServer.Core.PropertyData.ThrowIfReadOnly()
+   at EPiServer.Core.PropertyString.set_String(String value)
+   at EPiServer.Core.PropertyString.<>c__DisplayClass11_0.<set_Value>b__0()
+   at EPiServer.Core.PropertyData.SetPropertyValue(Object value, SetPropertyValueDelegate doSet)
+   at EPiServer.Core.PropertyString.set_Value(Object value)
+   at EPiServer.Core.ContentData.SetValue(String index, Object value)
+   at EPiServer.Core.ContentData.set_Item(String index, Object value)
+   at EPiServer.Core.PageData.set_CreatedBy(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 114
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 84
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 03:10:28,865 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 03:11:14,939 [20] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+CsvHelper.MissingFieldException: Field with name 'TeaserText' does not exist. You can ignore missing fields by setting MissingFieldFound to null.
+IReader state:
+   ColumnCount: 0
+   CurrentIndex: -1
+   HeaderRecord:
+["Name","ID","FriendlyUrl","CreatedBy"]
+IParser state:
+   ByteCount: 0
+   CharCount: 64
+   Row: 2
+   RawRow: 2
+   Count: 4
+   RawRecord:
+Alloy Meet,9,en/alloy-meet/,pkn
+
+
+   at CsvHelper.Configuration.ConfigurationFunctions.MissingFieldFound(MissingFieldFoundArgs args)
+   at CsvHelper.CsvReader.GetFieldIndex(IEnumerable`1 names, Int32 index, Boolean isTryGet, Boolean isOptional)
+   at CsvHelper.Expressions.ExpressionManager.CreateGetFieldExpression(MemberMap memberMap)
+   at CsvHelper.Expressions.ExpressionManager.CreateMemberAssignmentsForMapping(ClassMap mapping, List`1 assignments)
+   at CsvHelper.Expressions.ObjectRecordCreator.CreateCreateRecordDelegate(Type recordType)
+   at CsvHelper.Expressions.RecordCreator.GetCreateRecordDelegate(Type recordType)
+   at CsvHelper.Expressions.RecordCreator.Create[T]()
+   at CsvHelper.Expressions.RecordManager.Create[T]()
+   at CsvHelper.CsvReader.GetRecord[T]()
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 75
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+CsvHelper.MissingFieldException: Field with name 'TeaserText' does not exist. You can ignore missing fields by setting MissingFieldFound to null.
+IReader state:
+   ColumnCount: 0
+   CurrentIndex: -1
+   HeaderRecord:
+["Name","ID","FriendlyUrl","CreatedBy"]
+IParser state:
+   ByteCount: 0
+   CharCount: 64
+   Row: 2
+   RawRow: 2
+   Count: 4
+   RawRecord:
+Alloy Meet,9,en/alloy-meet/,pkn
+
+
+   at CsvHelper.Configuration.ConfigurationFunctions.MissingFieldFound(MissingFieldFoundArgs args)
+   at CsvHelper.CsvReader.GetFieldIndex(IEnumerable`1 names, Int32 index, Boolean isTryGet, Boolean isOptional)
+   at CsvHelper.Expressions.ExpressionManager.CreateGetFieldExpression(MemberMap memberMap)
+   at CsvHelper.Expressions.ExpressionManager.CreateMemberAssignmentsForMapping(ClassMap mapping, List`1 assignments)
+   at CsvHelper.Expressions.ObjectRecordCreator.CreateCreateRecordDelegate(Type recordType)
+   at CsvHelper.Expressions.RecordCreator.GetCreateRecordDelegate(Type recordType)
+   at CsvHelper.Expressions.RecordCreator.Create[T]()
+   at CsvHelper.Expressions.RecordManager.Create[T]()
+   at CsvHelper.CsvReader.GetRecord[T]()
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 75
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 03:17:07,729 [41] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property TeaserText is read-only.
+   at EPiServer.Core.PropertyData.ThrowIfReadOnly()
+   at EPiServer.Core.PropertyLongString.set_LongString(String value)
+   at EPiServer.Core.PropertyLongString.<>c__DisplayClass7_0.<set_Value>b__0()
+   at EPiServer.Core.PropertyData.SetPropertyValue(Object value, SetPropertyValueDelegate doSet)
+   at EPiServer.Core.PropertyLongString.set_Value(Object value)
+   at EPiServer.Core.ContentData.SetValue(String index, Object value)
+   at EPiServer.Core.ContentData.set_Item(String index, Object value)
+   at EPiServer.Core.ContentDataExtensions.SetPropertyValue[TContentData,TPropertyValue](TContentData contentData, Expression`1 expression, TPropertyValue propertyValue)
+   at ExportExcelReport.Models.Pages.SitePageData.set_TeaserText(String value) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Models\Pages\SitePageData.cs:line 76
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 114
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 84
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property TeaserText is read-only.
+   at EPiServer.Core.PropertyData.ThrowIfReadOnly()
+   at EPiServer.Core.PropertyLongString.set_LongString(String value)
+   at EPiServer.Core.PropertyLongString.<>c__DisplayClass7_0.<set_Value>b__0()
+   at EPiServer.Core.PropertyData.SetPropertyValue(Object value, SetPropertyValueDelegate doSet)
+   at EPiServer.Core.PropertyLongString.set_Value(Object value)
+   at EPiServer.Core.ContentData.SetValue(String index, Object value)
+   at EPiServer.Core.ContentData.set_Item(String index, Object value)
+   at EPiServer.Core.ContentDataExtensions.SetPropertyValue[TContentData,TPropertyValue](TContentData contentData, Expression`1 expression, TPropertyValue propertyValue)
+   at ExportExcelReport.Models.Pages.SitePageData.set_TeaserText(String value) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Models\Pages\SitePageData.cs:line 76
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 114
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 84
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 03:21:59,072 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 03:24:43,837 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 12:38:07,004 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 12:52:22,906 [9] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 125
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 95
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 125
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 95
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 12:52:57,955 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 12:53:32,121 [25] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 125
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 95
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 125
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 95
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 12:54:45,252 [27] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 125
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 95
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 125
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 95
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 13:03:07,518 [72] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute()
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute()
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 13:03:07,521 [60] ERROR EPiServer.Find.UI.Helpers.ExternalResourceHelper: Could not fetch https://dl.episerver.net/version.json, the following occured: System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at EPiServer.Find.UI.Helpers.ExternalResourceHelper.FetchVersionFromExternalResource[T](String urlToJsonFile)
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+2023-08-09 13:03:27,564 [60] ERROR EPiServer.Framework.Cache.ObjectInstanceCacheExtensions: Failed to Read cacheKey = 'EP:HashedContentVersion:-834891697'
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EPiServer.DataAccess.Internal.ContentVersionDB.<>c__DisplayClass4_0.<List>b__1(CultureInfo c)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at EPiServer.DataAccess.Internal.DataAccessHelper.AddIntListParameter(DbParameterCollection parameterCollection, String parameterName, IEnumerable`1 integers)
+   at EPiServer.DataAccess.Internal.ContentVersionDB.<>c__DisplayClass4_0.<List>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass31_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.Execute[TResult](Func`1 action)
+   at EPiServer.DataAccess.Internal.ContentVersionDB.List(VersionFilter filter, Int32 startIndex, Int32 maxRows, Int32& totalCount)
+   at EPiServer.DataAbstraction.Internal.DefaultContentVersionRepository.<>c__DisplayClass38_0.<List>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EPiServer.DataAccess.Internal.ContentVersionDB.<>c__DisplayClass4_0.<List>b__1(CultureInfo c)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at EPiServer.DataAccess.Internal.DataAccessHelper.AddIntListParameter(DbParameterCollection parameterCollection, String parameterName, IEnumerable`1 integers)
+   at EPiServer.DataAccess.Internal.ContentVersionDB.<>c__DisplayClass4_0.<List>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass31_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.Execute[TResult](Func`1 action)
+   at EPiServer.DataAccess.Internal.ContentVersionDB.List(VersionFilter filter, Int32 startIndex, Int32 maxRows, Int32& totalCount)
+   at EPiServer.DataAbstraction.Internal.DefaultContentVersionRepository.<>c__DisplayClass38_0.<List>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+2023-08-09 13:05:27,728 [8] ERROR EPiServer.Framework.Cache.ObjectInstanceCacheExtensions: Failed to Read cacheKey = 'EP:HashedContentVersion:-834891697'
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EPiServer.DataAccess.Internal.ContentVersionDB.<>c__DisplayClass4_0.<List>b__1(CultureInfo c)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at EPiServer.DataAccess.Internal.DataAccessHelper.AddIntListParameter(DbParameterCollection parameterCollection, String parameterName, IEnumerable`1 integers)
+   at EPiServer.DataAccess.Internal.ContentVersionDB.<>c__DisplayClass4_0.<List>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass31_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.Execute[TResult](Func`1 action)
+   at EPiServer.DataAccess.Internal.ContentVersionDB.List(VersionFilter filter, Int32 startIndex, Int32 maxRows, Int32& totalCount)
+   at EPiServer.DataAbstraction.Internal.DefaultContentVersionRepository.<>c__DisplayClass38_0.<List>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EPiServer.DataAccess.Internal.ContentVersionDB.<>c__DisplayClass4_0.<List>b__1(CultureInfo c)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at EPiServer.DataAccess.Internal.DataAccessHelper.AddIntListParameter(DbParameterCollection parameterCollection, String parameterName, IEnumerable`1 integers)
+   at EPiServer.DataAccess.Internal.ContentVersionDB.<>c__DisplayClass4_0.<List>b__0()
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.<>c__DisplayClass31_0`1.<Execute>b__0()
+   at EPiServer.Data.Providers.SqlTransientErrorsRetryPolicy.Execute[TResult](Func`1 method)
+   at EPiServer.Data.Providers.Internal.SqlDatabaseExecutor.Execute[TResult](Func`1 action)
+   at EPiServer.DataAccess.Internal.ContentVersionDB.List(VersionFilter filter, Int32 startIndex, Int32 maxRows, Int32& totalCount)
+   at EPiServer.DataAbstraction.Internal.DefaultContentVersionRepository.<>c__DisplayClass38_0.<List>b__0()
+   at EPiServer.Framework.Cache.ObjectInstanceCacheExtensions.ReadThroughWithWait[T](IObjectInstanceCache cache, String cacheKey, Func`1 readValue, Func`2 evictionPolicy)
+2023-08-09 13:09:34,514 [8] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+CsvHelper.BadDataException: You can ignore bad data by setting BadDataFound to null.
+IReader state:
+   ColumnCount: 0
+   CurrentIndex: 3
+   HeaderRecord:
+["Name","ID","FriendlyUrl","Test"]
+IParser state:
+   ByteCount: 0
+   CharCount: 95
+   Row: 3
+   RawRow: 3
+   Count: 4
+   RawRecord:
+Alloy Track,7,en/alloy-track/,p"
+
+
+   at CsvHelper.Configuration.ConfigurationFunctions.BadDataFound(BadDataFoundArgs args)
+   at CsvHelper.CsvParser.ProcessRFC4180BadField(Int32 start, Int32 length)
+   at CsvHelper.CsvParser.GetField(Int32 index)
+   at CsvHelper.CsvParser.get_Item(Int32 index)
+   at CsvHelper.CsvReader.GetField(Int32 index)
+   at CsvHelper.CsvReader.get_Item(Int32 index)
+   at lambda_method(Closure )
+   at CsvHelper.Expressions.RecordCreator.Create[T]()
+   at CsvHelper.Expressions.RecordManager.Create[T]()
+   at CsvHelper.CsvReader.GetRecord[T]()
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 78
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+CsvHelper.BadDataException: You can ignore bad data by setting BadDataFound to null.
+IReader state:
+   ColumnCount: 0
+   CurrentIndex: 3
+   HeaderRecord:
+["Name","ID","FriendlyUrl","Test"]
+IParser state:
+   ByteCount: 0
+   CharCount: 95
+   Row: 3
+   RawRow: 3
+   Count: 4
+   RawRecord:
+Alloy Track,7,en/alloy-track/,p"
+
+
+   at CsvHelper.Configuration.ConfigurationFunctions.BadDataFound(BadDataFoundArgs args)
+   at CsvHelper.CsvParser.ProcessRFC4180BadField(Int32 start, Int32 length)
+   at CsvHelper.CsvParser.GetField(Int32 index)
+   at CsvHelper.CsvParser.get_Item(Int32 index)
+   at CsvHelper.CsvReader.GetField(Int32 index)
+   at CsvHelper.CsvReader.get_Item(Int32 index)
+   at lambda_method(Closure )
+   at CsvHelper.Expressions.RecordCreator.Create[T]()
+   at CsvHelper.Expressions.RecordManager.Create[T]()
+   at CsvHelper.CsvReader.GetRecord[T]()
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 78
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 13:09:56,439 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 13:10:38,771 [21] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 121
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 91
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 121
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 91
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 13:19:03,604 [32] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 122
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 90
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record) in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 122
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\ImportFromCsvFileJob.cs:line 90
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 13:20:39,809 [13] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute()
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute()
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 13:20:59,692 [27] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.ImportFromCsvFileJob failed for the job 'ImportFromCsvFileJob' with jobId ='0421d982-72b2-41e9-8215-9a9c1f68c6f4' 
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute()
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NotSupportedException: The property Test is read-only
+   at EPiServer.DataAbstraction.RuntimeModel.ContentDataInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ProductPageProxy.set_Test(String value)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.UpdateCommunicationPage(ProductPage page, Model record)
+   at ExportExcelReport.Business.Job.ImportFromCsvFileJob.Execute()
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 13:30:48,086 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 13:36:14,340 [27] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 14:03:10,063 [15] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 14:06:57,242 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 14:38:05,018 [13] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 14:55:19,629 [70] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 14:58:33,728 [15] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 15:33:34,554 [28] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 15:43:23,403 [13] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 15:57:28,591 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 16:56:40,945 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
+2023-08-09 16:58:41,503 [16] ERROR EPiServer.DataAbstraction.ScheduledJob: Job ExportExcelReport.Business.Job.UpdateCommunicationPageFromCSVJob failed for the job 'Update Communication Page From CSV' with jobId ='429332e1-c22d-460c-9d84-20c6d50fa205' 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ExportExcelReport.Business.Job.UpdateCommunicationPageFromCSVJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\UpdateCommunicationPageFromCSVJob.cs:line 59
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ExportExcelReport.Business.Job.UpdateCommunicationPageFromCSVJob.Execute() in C:\Users\pijus\source\repos\ExportExcelReport\ExportExcelReport\Business\Job\UpdateCommunicationPageFromCSVJob.cs:line 59
+   at EPiServer.Scheduler.Internal.DefaultScheduledJobExecutor.<Execute>d__31.MoveNext()
+2023-08-09 17:16:32,568 [12] ERROR EPiServer.Find.Cms.CmsUnifiedSearchSetUp: IAttachmentHelper can not be initiated.
